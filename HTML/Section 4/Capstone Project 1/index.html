@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+  </head>
+  <body>
+    <!-- TODO style nave header using css make it sticky to the top too -->
+    <nav class="container">
+      <a href="#summary">Summary</a>
+      <a href="#education">Education</a>
+      <a href="#work-experience">work Experience</a>
+      <a href="skills">Skills</a>
+      <a href="#acomplishments">Acomplishments</a>
+    </nav>
+    <section id="summary">
+      <img src="./assets/forest fox.png" height="200px" />
+      <h2>Summary</h2>
+      <p>
+        Based in Denton, TX, I’m a front-end developer with a solid foundation
+        in modern web development and a passion for bringing ideas to life in
+        the browser. I work with technologies like HTML, CSS, JavaScript, and
+        React to build responsive, user-friendly applications. I’m continuously
+        learning and refining my skills, with a strong desire to bringing
+        creativity to your UI.
+      </p>
+    </section>
+    <hr />
+    <section id="education">
+      <h2>Education</h2>
+      <p>
+        <strong> John Brown University </strong> – Bachelor of Arts in Biblical
+        and Theological Studies & Bachelor of Arts in Philosophy
+      </p>
+    </section>
+    <hr />
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+      <ul>
+        <li>
+          <h3>
+            Miracles of Joy Metaphysical Store & Spiritual Center – Lewisville,
+            TX
+          </h3>
+        </li>
+        <p>Manager / Key Holder | 11/2021 – Present</p>
+        <ul>
+          <li>
+            Developed and maintained the company website using HTML, CSS, and
+            JavaScript; Improved SEO score by 20 points, increased web traAic to
+            1,000+ users, and boosted online sales by 32%
+          </li>
+          <li>
+            Analyzed customer feedback and market trends to improve user
+            experience and drive sales growth
+          </li>
+          <li>
+            Utilized data analytics tools to monitor website performance and
+            implement continuous improvements
+          </li>
+        </ul>
+        <li>
+          <h3>Falls Church Presbyterian – Falls Church, VA</h3>
+          <p>Youth Pastor | 07/2020 – 09/2021</p>
+        </li>
+
+        <ul>
+          <li>
+            Managed a $10,000 annual budget and allocated resources
+            strategically for events and programs
+          </li>
+          <li>
+            Coordinated over 100 volunteers to organize weekly outreach programs
+            serving 1,000+ individuals
+          </li>
+          <li>
+            Built and maintained relationships with 200+ families to strengthen
+            community engagement
+          </li>
+        </ul>
+      </ul>
+    </section>
+    <hr />
+    <section id="skills">
+      <!-- TODO switch the skills from bullet points to their own cute little colored boxes in css  group them into catigories then sped them out into a flex boxes-->
+      <!-- group them into webpage design, React elements; version control, Devtools, and soft skills -->
+      <h2>skills</h2>
+
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3 (Flexbox, Grid)</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Next.js (SSR & SSG)</li>
+        <li>Redux Toolkit</li>
+        <li>React Query</li>
+        <li>React Router</li>
+        <li>Sass/SCSS</li>
+        <li>Tailwind</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>Responsive Design</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Vercel</li>
+        <li>Netlify</li>
+        <li>NPM</li>
+        <li>Webpack</li>
+        <li>Parcel</li>
+        <li>Supabase</li>
+        <li>NextAuth</li>
+        <li>Problem-solving</li>
+        <li>Critical Thinking</li>
+        <li>Communication</li>
+        <li>Research</li>
+        <li>Team Collaboration</li>
+      </ul>
+    </section>
+    <hr />
+    <section id="acomplishments">
+      <h2>Acomplishments</h2>
+      <h3>Online Certifications</h3>
+      <ul>
+        <li>The Complete JavaScript Course: From Zero to Expert</li>
+        <li>Build Responsive Real-World Websites with HTML and CSS</li>
+        <li>The Ultimate React Course: React, Next.js, Redux & More</li>
+      </ul>
+    </section>
+    <hr />
+    <!-- steel the css from my other project when it comes time to style -->
+    <section id="contact" class="contact">
+      <div class="contact__wrapper wrapper bottom-border" id="contact">
+        <div class="contact__text">
+          <h2 class="contact__headline header-xl">Contact</h2>
+          <p class="contact__description">
+            I would love to hear from you! Please fill in the form, and I'll get
+            back to you as soon as possible.
+          </p>
+        </div>
+        <form action="post" class="contact__form" name="email-me" netlify>
+          <div class="contact__control">
+            <label for="name" class="contact__label visually-hidden"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="contact__input"
+              placeholder="First & Last Name"
+              required
+            />
+            <ion-icon
+              name="alert-circle-outline"
+              class="contact__invalid-icon"
+              width="24"
+              height="24"
+            ></ion-icon>
+          </div>
+
+          <div class="contact__control">
+            <label for="email" class="contact__label visually-hidden"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contact__input"
+              placeholder="Email Address"
+              required
+            />
+            <ion-icon
+              name="alert-circle-outline"
+              class="contact__invalid-icon"
+              width="24"
+              height="24"
+            ></ion-icon>
+          </div>
+
+          <div class="contact__control">
+            <label for="message" class="contact__label visually-hidden"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              class="contact__input"
+              placeholder="Message"
+              cols="30"
+              rows="3"
+              required
+            ></textarea>
+            <ion-icon
+              name="alert-circle-outline"
+              class="contact__invalid-icon"
+              width="24"
+              height="24"
+            ></ion-icon>
+          </div>
+          <div class="contact__control align-right">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <!-- TODO replace the words with icons -->
+      <a href="https://github.com/Noah-Clark777" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/noahclarkj/" target="_blank"
+        >linkedIn</a
+      >
+      <a href="./assets/Noah Clark Resume 2026.pdf" target="_blank">Resume</a>
+      <p>© Noah Clark All rights Reserved.</p>
+    </footer>
+  </body>
+</html>
