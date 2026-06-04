@@ -1,0 +1,26 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: rgb(32, 31, 36);
+}
+
+.flex-container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+.name {
+  color: rgb(78, 221, 173);
+  font-family: indie flower;
+  font-size: 35px;
+}
+
+.header {
+  justify-self: center;
+  color: rgb(78, 221, 173);
+  font-family: lobster;
+  font-size: 100px;
+}
