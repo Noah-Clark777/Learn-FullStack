@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-developer-udemy-filles",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000L\u0000e\u0000a\u0000r\u0000n\u0000-\u0000F\u0000u\u0000l\u0000l\u0000S\u0000t\u0000a\u0000c\u0000k\u0000\r\u0000 \u0000",
+  "homepage": "https://github.com/Noah-Clark777/Learn-FullStack#readme",
+  "bugs": {
+    "url": "https://github.com/Noah-Clark777/Learn-FullStack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noah-Clark777/Learn-FullStack.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "inquirer": "^14.0.2",
+    "qr-image": "^3.2.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,27 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.content.css" />
+  <link rel="stylesheet" href="/style.layout.css" />
+  <title>Document</title>
+</head>
+<body>
+  <%- include("partials/header.ejs") %>
+  <h1>Contact Me</h1>
+  <form action="/submit" method="POST">
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />
+    <input
+      name="email"
+      type="text"
+      class="feedback-input"
+      placeholder="Email"
+    />
+    <textarea
+      name="text"
+      class="feedback-input"
+      placeholder="Comment"
+    ></textarea>
+    <input type="submit" value="SUBMIT" />
+  </form>
+  <%- include("partials/footer.ejs") %>
+</body>
