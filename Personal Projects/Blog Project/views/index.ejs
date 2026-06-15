@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blog Project</title>
+  </head>
+  <body>
+    <h1 class="title">Submit your blog post below</h1>
+    <form action="/submit" method="POST" class="form-container">
+      <div class="flex-container">
+        <label for="username">First Name:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="First Name"
+        />
+        <label for="topic">Topic:</label>
+      </div>
+      <input type="text" id="topic" name="topic" placeholder="Topic" />
+      <label for="content">Content:</label>
+      <input
+        type="text"
+        id="content"
+        name="content"
+        placeholder="Share your thoughts..."
+      />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div class="posts-container">
+      <h2>Blog Posts</h2>
+      <% if (posts.length > 0) { %>
+        <% posts.forEach((post) => { %>
+          <div class="post">
+            <h3><%= post.blogTopic %></h3>
+            <p class="author">By <%= post.author %></p>
+            <p class="content"><%= post.blogContent %></p>
+            <form action="/delete/<%= post.id %>" method="POST" style="display: inline;">
+              <button type="submit" class="delete-btn">Delete</button>
+            </form>
+          </div>
+        <% }); %>
+      <% } else { %>
+        <p class="no-posts">No blog posts yet. Be the first to post!</p>
+      <% } %>
+    </div>
+  </body>
+</html>
