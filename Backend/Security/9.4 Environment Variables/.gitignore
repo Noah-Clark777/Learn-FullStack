@@ -1,0 +1,29 @@
+# Environment files and secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.sqlite
+*.db
+
+# Private folders and sensitive files
+secrets/
+private/
+sensitive/
+docs/private/
+notes/private/
+
+# Logs and temp files
+*.log
+*.bak
+*.tmp
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
